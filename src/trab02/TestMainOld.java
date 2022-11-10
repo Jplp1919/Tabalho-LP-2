@@ -3,7 +3,7 @@ package trab02;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
-import trab02.doc.DocumentWriter;
+import trab02.doc.DocumentWriterEscritor;
 import trab02.doc.ManipuladorXML;
 
 public class TestMainOld {
@@ -35,7 +35,7 @@ public class TestMainOld {
      // for (int i =0; i < listadeEscritores.size(); i++){
       //    System.out.println(listadeEscritores.get(i));
       
-        DocumentWriter dw = new DocumentWriter(con);
+        DocumentWriterEscritor dw = new DocumentWriterEscritor(con);
         dw.writeEscritores();
               
       }

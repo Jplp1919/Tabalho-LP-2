@@ -8,13 +8,13 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import org.w3c.dom.Element;
 
-public class DocumentWriter {
+public class DocumentWriterEscritor {
     //  Document doc;
 
     Document doc = ManipuladorXML.newDocument();
     Connection con;
 
-    public DocumentWriter(Connection con) {
+    public DocumentWriterEscritor(Connection con) {
         this.con = con;
     }
 
