@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Escritores>
+    <Escritor>
+        <Id>1</Id>
+        <Nome>Stephen</Nome>
+        <Sobrenome>King</Sobrenome>
+    </Escritor>
+    <Escritor>
+        <Id>2</Id>
+        <Nome>Agatha</Nome>
+        <Sobrenome>teste</Sobrenome>
+    </Escritor>
+    <Escritor>
+        <Id>3</Id>
+        <Nome>Arthur Conan</Nome>
+        <Sobrenome>Doyle</Sobrenome>
+    </Escritor>
+</Escritores>
