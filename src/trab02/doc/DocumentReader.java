@@ -7,8 +7,6 @@ import java.util.List;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -23,7 +21,7 @@ public class DocumentReader {
     public List<Escritor> readEscritores(String path) throws XPathExpressionException, SAXException, ParserConfigurationException, IOException {
         File file = new File(path);
         List<Escritor> escritores = new ArrayList<>();
-       
+
         DocumentBuilderFactory dbf
                 = DocumentBuilderFactory.newInstance();
 
@@ -36,13 +34,13 @@ public class DocumentReader {
                 = doc.getElementsByTagName("Escritor");
 
         for (int i = 0; i < nodeList.getLength(); ++i) {
-             Escritor escritor = new Escritor();
+            Escritor escritor = new Escritor();
             Node node = nodeList.item(i);
             node.getNodeName();
             if (node.getNodeType()
                     == Node.ELEMENT_NODE) {
                 Element tElement = (Element) node;
-                String idString
+                String id
                         = tElement
                                 .getElementsByTagName("Id")
                                 .item(0)
@@ -57,20 +55,19 @@ public class DocumentReader {
                                 "Sobrenome")
                         .item(0)
                         .getTextContent();
-                int id = Integer.parseInt(idString);
-                escritor.setId(id);
+                escritor.setId(Integer.parseInt(id));
                 escritor.setPrimeiroNome(nome);
                 escritor.setSobreNome(sobrenome);
-               escritores.add(escritor);
+                escritores.add(escritor);
             }
         }
         return escritores;
     }
-    /*
-        public List<Livro> readLivros(String path) throws XPathExpressionException, SAXException, ParserConfigurationException, IOException {
+
+    public List<Livro> readLivros(String path) throws XPathExpressionException, SAXException, ParserConfigurationException, IOException {
         File file = new File(path);
         List<Livro> livros = new ArrayList<>();
-       
+
         DocumentBuilderFactory dbf
                 = DocumentBuilderFactory.newInstance();
 
@@ -80,38 +77,59 @@ public class DocumentReader {
         doc.getDocumentElement().normalize();
         doc.getDocumentElement().getNodeName();
         NodeList nodeList
-                = doc.getElementsByTagName("Escritor");
+                = doc.getElementsByTagName("Livro");
 
         for (int i = 0; i < nodeList.getLength(); ++i) {
-             Livro livro = new Livro();
+            Livro livro = new Livro();
             Node node = nodeList.item(i);
             node.getNodeName();
             if (node.getNodeType()
                     == Node.ELEMENT_NODE) {
                 Element tElement = (Element) node;
-                String idString
+                String id
                         = tElement
                                 .getElementsByTagName("Id")
                                 .item(0)
                                 .getTextContent();
-                String nome = tElement
+                String titulo = tElement
                         .getElementsByTagName(
-                                "Nome")
+                                "Titulo")
                         .item(0)
                         .getTextContent();
-                String sobrenome = tElement
+                String genero = tElement
                         .getElementsByTagName(
-                                "Sobrenome")
+                                "Genero")
                         .item(0)
                         .getTextContent();
-                int id = Integer.parseInt(idString);
-                escritor.setId(id);
-                escritor.setPrimeiroNome(nome);
-                escritor.setSobreNome(sobrenome);
-               escritores.add(escritor);
+
+                String isbn = tElement
+                        .getElementsByTagName(
+                                "Isbn")
+                        .item(0)
+                        .getTextContent();
+
+                String preco = tElement
+                        .getElementsByTagName(
+                                "Preco")
+                        .item(0)
+                        .getTextContent();
+                String idescritor = tElement
+                        .getElementsByTagName(
+                                "IdEscritor")
+                        .item(0)
+                        .getTextContent();
+
+
+                livro.setId(Integer.valueOf(id));
+                livro.setTitulo(titulo);
+                livro.setGenero(genero);
+                livro.setIsbn(isbn);
+                livro.setPreco(Double.valueOf(preco));
+                livro.setIdEscritor(Integer.parseInt(idescritor));
+                
             }
         }
-        return escritores;
-    } */
-    
+        return livros;
+    }
+
 }
