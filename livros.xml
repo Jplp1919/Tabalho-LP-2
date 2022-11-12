@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Livros>
+    <Livro>
+        <Id>1</Id>
+        <Titulo>It</Titulo>
+        <Genero>Terror</Genero>
+        <Isbn>0-670-81302-8</Isbn>
+        <Preco>18.0</Preco>
+        <IdEscritor>1</IdEscritor>
+    </Livro>
+    <Livro>
+        <Id>2</Id>
+        <Titulo>The Shining</Titulo>
+        <Genero>Terror</Genero>
+        <Isbn>978-0-385-12167-5</Isbn>
+        <Preco>25.5</Preco>
+        <IdEscritor>1</IdEscritor>
+    </Livro>
+    <Livro>
+        <Id>3</Id>
+        <Titulo>Carrie</Titulo>
+        <Genero>Terror</Genero>
+        <Isbn>978-0-385-08695-0</Isbn>
+        <Preco>25.0</Preco>
+        <IdEscritor>1</IdEscritor>
+    </Livro>
+    <Livro>
+        <Id>6</Id>
+        <Titulo>Teste</Titulo>
+        <Genero>tester</Genero>
+        <Isbn>2</Isbn>
+        <Preco>18.0</Preco>
+        <IdEscritor>10</IdEscritor>
+    </Livro>
+</Livros>
