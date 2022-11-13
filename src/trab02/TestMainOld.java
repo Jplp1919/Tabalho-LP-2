@@ -44,16 +44,30 @@ public class TestMainOld {
         
          DocumentWriter dw = new DocumentWriter(con);
         //dw.writeEscritores();
-        dw.writeLivros();
+       // dw.writeLivros();
         DocumentReader dr = new DocumentReader();
+       
         try {
            List<Escritor> listadeEscritores = dr.readEscritores("./escritores.xml");
+            System.out.println(listadeEscritores.size());
            listadeEscritores.stream().forEach(le -> {
            System.out.println(le.getSobreNome() + ", " + le.getPrimeiroNome());
            });
         } catch (SAXException | ParserConfigurationException | IOException ex) {
             Logger.getLogger(TestMainOld.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+       try {
+           List<Livro> lista = dr.readLivros("./livros.xml");
+           System.out.println("Teste ---- ");
+           System.out.println(lista.size());
+           lista.stream().forEach(le -> {
+           System.out.println(le.getTitulo() + ", " + le.getPreco());
+           });
+        } catch (SAXException | ParserConfigurationException | IOException ex) {
+            Logger.getLogger(TestMainOld.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
       }
     }
 

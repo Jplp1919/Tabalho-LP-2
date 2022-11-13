@@ -45,7 +45,6 @@ public class PersistDAO {
             pstm.setDouble(4, livro.getPreco());
             pstm.setInt(5, livro.getIdEscritor());
             pstm.execute();
-
             try (ResultSet rst = pstm.getGeneratedKeys()) {
                 while (rst.next()) {
                     livro.setId(rst.getInt(1));
@@ -199,5 +198,23 @@ public class PersistDAO {
 
         }
     }
+        
+      public void cleanTableBook() throws SQLException{
+          String sql = "DELETE FROM LIVROS";
+          
+          try(PreparedStatement ps = con.prepareStatement(sql)){
+            ps.execute();
+          }
+          
+      }  
+      
+            public void cleanTableWriter() throws SQLException{
+          String sql = "DELETE FROM ESCRITOR";
+          
+          try(PreparedStatement ps = con.prepareStatement(sql)){
+            ps.execute();
+          }
+          
+      }  
 
 }

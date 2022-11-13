@@ -121,12 +121,13 @@ public class DocumentReader {
 
 
                 livro.setId(Integer.valueOf(id));
+                System.out.println(titulo);
                 livro.setTitulo(titulo);
                 livro.setGenero(genero);
                 livro.setIsbn(isbn);
                 livro.setPreco(Double.valueOf(preco));
                 livro.setIdEscritor(Integer.parseInt(idescritor));
-                
+                livros.add(livro);
             }
         }
         return livros;

@@ -27,7 +27,7 @@ public class DocumentWriter {
      * </Escritor>
      *
      */
-    public void writeEscritor(Escritor escritor, Element master) {
+    private void writeEscritor(Escritor escritor, Element master) {
         // PersistDAO dao = new  PersistDAO(con);
 
         //<Escritor>
@@ -76,7 +76,7 @@ public class DocumentWriter {
      * </Livro>
      *
      */
-    public void writeLivro(Livro livro, Element master) {
+    private void writeLivro(Livro livro, Element master) {
         //<Escritor>
         Element root = doc.createElement("Livro");
         master.appendChild(root);
