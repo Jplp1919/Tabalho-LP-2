@@ -4,6 +4,8 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -25,11 +27,9 @@ import javax.xml.xpath.XPathFactory;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
-public class ManipuladorXML {
+public class DocumentManipulatorXML {
+    static final Logger logger = Logger.getLogger(DocumentManipulatorXML.class.getName());
 
-    /**
-     * Criação de um objeto Document
-     */
     public static Document newDocument() {
         try {
 
@@ -37,14 +37,12 @@ public class ManipuladorXML {
             return dbF.newDocumentBuilder().newDocument();
 
         } catch (ParserConfigurationException ex) {
-            System.out.println(ex);
+            logger.log(Level.SEVERE, null, ex);
             return null;
         }
     }
 
-    /**
-     * Obtenção de um objeto XPath Expression
-     */
+
     public static XPathExpression getXPathExpression(String xpath) {
         try {
 
@@ -53,12 +51,12 @@ public class ManipuladorXML {
             return expr;
 
         } catch (XPathExpressionException ex) {
-            System.out.println(ex);
+            logger.log(Level.SEVERE, null, ex);
             return null;
         }
     }
 
-    public static String xmlParaString(Document doc) {
+    public static String xmltoString(Document doc) {
         try {
 
             Source source = new DOMSource(doc);
@@ -70,12 +68,12 @@ public class ManipuladorXML {
             return stream.toString();
 
         } catch (TransformerFactoryConfigurationError | IllegalArgumentException | TransformerException ex) {
-            System.out.println(ex);
+          logger.log(Level.SEVERE, null, ex);
             return null;
         }
     }
 
-    public static Document stringParaXml(String text) {
+    public static Document stringtoXml(String text) {
         try {
 
             DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance();
@@ -84,13 +82,12 @@ public class ManipuladorXML {
             return builder.parse(new ByteArrayInputStream(text.getBytes()));
 
         } catch (ParserConfigurationException | SAXException | IOException ex) {
-            System.out.println(ex);
+            logger.log(Level.SEVERE, null, ex);
             return null;
         }
     }
 
-    // Leitura de um Arquivo XML
-    // Montar um objeto Document a partir de um arquivo texto XML
+
     public static Document readXmlFile(String filename) {
         try {
 
@@ -100,12 +97,12 @@ public class ManipuladorXML {
             return builder.parse(filename);
 
         } catch (IOException | SAXException | ParserConfigurationException ex) {
-            System.out.println(ex);
+           logger.log(Level.SEVERE, null, ex);
             return null;
         }
     }
 
-    // Transformar um objeto Document em um arquivo texto XML
+
     public static void writeXmlFile(Document doc, String filename) {
         try {
 
@@ -113,14 +110,14 @@ public class ManipuladorXML {
             File file = new File(filename);
             Result result = new StreamResult(file);
 
-            System.out.println(result.toString());
+          result.toString();
 
             Transformer xformer = TransformerFactory.newInstance().newTransformer();
             xformer.setOutputProperty(OutputKeys.INDENT, "yes");
             xformer.transform(source, result);
 
         } catch (TransformerException | TransformerFactoryConfigurationError ex) {
-            System.out.println(ex);
+            logger.log(Level.SEVERE, null, ex);
         }
     }
 }

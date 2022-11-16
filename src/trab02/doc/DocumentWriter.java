@@ -12,7 +12,7 @@ import trab02.Livro;
 public class DocumentWriter {
     //  Document doc;
 
-    Document doc = ManipuladorXML.newDocument();
+    Document doc = DocumentManipulatorXML.newDocument();
     Connection con;
 
     public DocumentWriter(Connection con) {
@@ -62,7 +62,7 @@ public class DocumentWriter {
             this.writeEscritor(escritor, master);
 
         }
-        ManipuladorXML.writeXmlFile(doc, "./escritores.xml");
+        DocumentManipulatorXML.writeXmlFile(doc, "./escritores.xml");
     }
 
     /**
@@ -123,7 +123,7 @@ public class DocumentWriter {
             this.writeLivro(livro, master);
 
         }
-        ManipuladorXML.writeXmlFile(doc, "./livros.xml");
+        DocumentManipulatorXML.writeXmlFile(doc, "./livros.xml");
     }
 
 }

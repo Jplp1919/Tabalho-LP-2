@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T19:07:04.348434900Z</date>
+  <millis>1668625624348</millis>
+  <nanos>434900</nanos>
+  <sequence>0</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>saveEscritor</method>
+  <thread>27</thread>
+  <message>Operação de Salvar Feita com Sucuesso</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T19:28:29.226516500Z</date>
+  <millis>1668626909226</millis>
+  <nanos>516500</nanos>
+  <sequence>0</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>deleteEscritor</method>
+  <thread>27</thread>
+  <message>Escritor(es) Deletado(s)</message>
+</record>
+<record>
+  <date>2022-11-16T19:28:29.238485700Z</date>
+  <millis>1668626909238</millis>
+  <nanos>485700</nanos>
+  <sequence>1</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>deleteEscritor</method>
+  <thread>27</thread>
+  <message>Quantidade de linhas modificadas: 1</message>
+</record>
+<record>
+  <date>2022-11-16T19:28:34.663948100Z</date>
+  <millis>1668626914663</millis>
+  <nanos>948100</nanos>
+  <sequence>3</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>deleteEscritor</method>
+  <thread>27</thread>
+  <message>Escritor(es) Deletado(s)</message>
+</record>
+<record>
+  <date>2022-11-16T19:28:34.664971700Z</date>
+  <millis>1668626914664</millis>
+  <nanos>971700</nanos>
+  <sequence>4</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>deleteEscritor</method>
+  <thread>27</thread>
+  <message>Quantidade de linhas modificadas: 1</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T19:52:58.677391Z</date>
+  <millis>1668628378677</millis>
+  <nanos>391000</nanos>
+  <sequence>0</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateEscritor</method>
+  <thread>27</thread>
+  <message>Primeiro Nome Atualizado no Escritor com Id: 5</message>
+</record>
+<record>
+  <date>2022-11-16T19:52:58.691210200Z</date>
+  <millis>1668628378691</millis>
+  <nanos>210200</nanos>
+  <sequence>1</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateEscritor</method>
+  <thread>27</thread>
+  <message>Sobrenome Atualizado no Escritor com Id: 5</message>
+</record>
+<record>
+  <date>2022-11-16T19:55:34.229269200Z</date>
+  <millis>1668628534229</millis>
+  <nanos>269200</nanos>
+  <sequence>3</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Isbn Atualizado no Livro com Id: 16</message>
+</record>
+<record>
+  <date>2022-11-16T19:55:54.807805800Z</date>
+  <millis>1668628554807</millis>
+  <nanos>805800</nanos>
+  <sequence>5</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Titulo Atualizado no Livro com Id: 16</message>
+</record>
+<record>
+  <date>2022-11-16T19:56:13.360295300Z</date>
+  <millis>1668628573360</millis>
+  <nanos>295300</nanos>
+  <sequence>7</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateEscritor</method>
+  <thread>27</thread>
+  <message>Primeiro Nome Atualizado no Escritor com Id: 10</message>
+</record>
+<record>
+  <date>2022-11-16T19:56:13.361292600Z</date>
+  <millis>1668628573361</millis>
+  <nanos>292600</nanos>
+  <sequence>8</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateEscritor</method>
+  <thread>27</thread>
+  <message>Sobrenome Atualizado no Escritor com Id: 10</message>
+</record>
+<record>
+  <date>2022-11-16T19:56:38.416691700Z</date>
+  <millis>1668628598416</millis>
+  <nanos>691700</nanos>
+  <sequence>10</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>saveEscritor</method>
+  <thread>27</thread>
+  <message>Escritor Salvo com Sucuesso</message>
+</record>
+<record>
+  <date>2022-11-16T19:57:46.436986500Z</date>
+  <millis>1668628666436</millis>
+  <nanos>986500</nanos>
+  <sequence>13</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Titulo Atualizado no Livro com Id: 17</message>
+</record>
+<record>
+  <date>2022-11-16T19:57:46.439979200Z</date>
+  <millis>1668628666439</millis>
+  <nanos>979200</nanos>
+  <sequence>14</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Isbn Atualizado no Livro com Id: 17</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T20:00:17.368344400Z</date>
+  <millis>1668628817368</millis>
+  <nanos>344400</nanos>
+  <sequence>0</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Titulo Atualizado no Livro com Id: 16</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:17.381492500Z</date>
+  <millis>1668628817381</millis>
+  <nanos>492500</nanos>
+  <sequence>1</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Genero Atualizado no Livro com Id: 16</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:17.382490200Z</date>
+  <millis>1668628817382</millis>
+  <nanos>490200</nanos>
+  <sequence>2</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Preco Atualizado no Livro com Id: 16</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:17.384554500Z</date>
+  <millis>1668628817384</millis>
+  <nanos>554500</nanos>
+  <sequence>3</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Isbn Atualizado no Livro com Id: 16</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:17.432145400Z</date>
+  <millis>1668628817432</millis>
+  <nanos>145400</nanos>
+  <sequence>4</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Id do Escritor Atualizado no Livro com Id: 16</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:25.295424600Z</date>
+  <millis>1668628825295</millis>
+  <nanos>424600</nanos>
+  <sequence>6</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Titulo Atualizado no Livro com Id: 17</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:25.296421400Z</date>
+  <millis>1668628825296</millis>
+  <nanos>421400</nanos>
+  <sequence>7</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Genero Atualizado no Livro com Id: 17</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:25.297418800Z</date>
+  <millis>1668628825297</millis>
+  <nanos>418800</nanos>
+  <sequence>8</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Preco Atualizado no Livro com Id: 17</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:25.299413400Z</date>
+  <millis>1668628825299</millis>
+  <nanos>413400</nanos>
+  <sequence>9</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Isbn Atualizado no Livro com Id: 17</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:25.302429400Z</date>
+  <millis>1668628825302</millis>
+  <nanos>429400</nanos>
+  <sequence>10</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Id do Escritor Atualizado no Livro com Id: 17</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:29.765650700Z</date>
+  <millis>1668628829765</millis>
+  <nanos>650700</nanos>
+  <sequence>12</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Titulo Atualizado no Livro com Id: 18</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:29.766648100Z</date>
+  <millis>1668628829766</millis>
+  <nanos>648100</nanos>
+  <sequence>13</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Genero Atualizado no Livro com Id: 18</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:29.767645300Z</date>
+  <millis>1668628829767</millis>
+  <nanos>645300</nanos>
+  <sequence>14</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Preco Atualizado no Livro com Id: 18</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:29.768642700Z</date>
+  <millis>1668628829768</millis>
+  <nanos>642700</nanos>
+  <sequence>15</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Isbn Atualizado no Livro com Id: 18</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:29.771863Z</date>
+  <millis>1668628829771</millis>
+  <nanos>863000</nanos>
+  <sequence>16</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Id do Escritor Atualizado no Livro com Id: 18</message>
+</record>
+<record>
+  <date>2022-11-16T20:01:22.927776100Z</date>
+  <millis>1668628882927</millis>
+  <nanos>776100</nanos>
+  <sequence>18</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Titulo Atualizado no Livro com Id: 18</message>
+</record>
+<record>
+  <date>2022-11-16T20:01:22.928773200Z</date>
+  <millis>1668628882928</millis>
+  <nanos>773200</nanos>
+  <sequence>19</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Genero Atualizado no Livro com Id: 18</message>
+</record>
+<record>
+  <date>2022-11-16T20:01:22.929771400Z</date>
+  <millis>1668628882929</millis>
+  <nanos>771400</nanos>
+  <sequence>20</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Preco Atualizado no Livro com Id: 18</message>
+</record>
+<record>
+  <date>2022-11-16T20:01:22.933759600Z</date>
+  <millis>1668628882933</millis>
+  <nanos>759600</nanos>
+  <sequence>21</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Isbn Atualizado no Livro com Id: 18</message>
+</record>
+<record>
+  <date>2022-11-16T20:01:22.934756600Z</date>
+  <millis>1668628882934</millis>
+  <nanos>756600</nanos>
+  <sequence>22</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Id do Escritor Atualizado no Livro com Id: 18</message>
+</record>
+<record>
+  <date>2022-11-16T20:02:31.650879900Z</date>
+  <millis>1668628951650</millis>
+  <nanos>879900</nanos>
+  <sequence>24</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Titulo Atualizado no Livro com Id: 19</message>
+</record>
+<record>
+  <date>2022-11-16T20:02:31.652874700Z</date>
+  <millis>1668628951652</millis>
+  <nanos>874700</nanos>
+  <sequence>25</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Genero Atualizado no Livro com Id: 19</message>
+</record>
+<record>
+  <date>2022-11-16T20:02:31.653871500Z</date>
+  <millis>1668628951653</millis>
+  <nanos>871500</nanos>
+  <sequence>26</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Preco Atualizado no Livro com Id: 19</message>
+</record>
+<record>
+  <date>2022-11-16T20:02:31.659855300Z</date>
+  <millis>1668628951659</millis>
+  <nanos>855300</nanos>
+  <sequence>27</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>WARNING</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <exception>
+    <message>com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'ISBN' at row 1</message>
+    <frame>
+      <class>com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping</class>
+      <method>translateException</method>
+      <line>104</line>
+    </frame>
+    <frame>
+      <class>com.mysql.cj.jdbc.ClientPreparedStatement</class>
+      <method>executeInternal</method>
+      <line>916</line>
+    </frame>
+    <frame>
+      <class>com.mysql.cj.jdbc.ClientPreparedStatement</class>
+      <method>execute</method>
+      <line>354</line>
+    </frame>
+    <frame>
+      <class>trab02.PersistDAO</class>
+      <method>updateLivro</method>
+      <line>266</line>
+    </frame>
+    <frame>
+      <class>trab02.BookFrame</class>
+      <method>customButtonActionPerformed</method>
+      <line>531</line>
+    </frame>
+    <frame>
+      <class>trab02.BookFrame$15</class>
+      <method>actionPerformed</method>
+      <line>337</line>
+    </frame>
+    <frame>
+      <class>javax.swing.AbstractButton</class>
+      <method>fireActionPerformed</method>
+      <line>1972</line>
+    </frame>
+    <frame>
+      <class>javax.swing.AbstractButton$Handler</class>
+      <method>actionPerformed</method>
+      <line>2313</line>
+    </frame>
+    <frame>
+      <class>javax.swing.DefaultButtonModel</class>
+      <method>fireActionPerformed</method>
+      <line>405</line>
+    </frame>
+    <frame>
+      <class>javax.swing.DefaultButtonModel</class>
+      <method>setPressed</method>
+      <line>262</line>
+    </frame>
+    <frame>
+      <class>javax.swing.plaf.basic.BasicButtonListener</class>
+      <method>mouseReleased</method>
+      <line>279</line>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>processMouseEvent</method>
+      <line>6620</line>
+    </frame>
+    <frame>
+      <class>javax.swing.JComponent</class>
+      <method>processMouseEvent</method>
+      <line>3398</line>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>processEvent</method>
+      <line>6385</line>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>processEvent</method>
+      <line>2266</line>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEventImpl</method>
+      <line>4995</line>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>dispatchEventImpl</method>
+      <line>2324</line>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEvent</method>
+      <line>4827</line>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>retargetMouseEvent</method>
+      <line>4948</line>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>processMouseEvent</method>
+      <line>4575</line>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>dispatchEvent</method>
+      <line>4516</line>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>dispatchEventImpl</method>
+      <line>2310</line>
+    </frame>
+    <frame>
+      <class>java.awt.Window</class>
+      <method>dispatchEventImpl</method>
+      <line>2780</line>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEvent</method>
+      <line>4827</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEventImpl</method>
+      <line>775</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+      <line>720</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+      <line>714</line>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>399</line>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>86</line>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>97</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$5</class>
+      <method>run</method>
+      <line>747</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$5</class>
+      <method>run</method>
+      <line>745</line>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>399</line>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>86</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEvent</method>
+      <line>744</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpOneEventForFilters</method>
+      <line>203</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForFilter</method>
+      <line>124</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForHierarchy</method>
+      <line>113</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+      <line>109</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+      <line>101</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>run</method>
+      <line>90</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2022-11-16T20:02:31.662590200Z</date>
+  <millis>1668628951662</millis>
+  <nanos>590200</nanos>
+  <sequence>28</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Id do Escritor Atualizado no Livro com Id: 19</message>
+</record>
+<record>
+  <date>2022-11-16T20:02:44.914468Z</date>
+  <millis>1668628964914</millis>
+  <nanos>468000</nanos>
+  <sequence>30</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Titulo Atualizado no Livro com Id: 19</message>
+</record>
+<record>
+  <date>2022-11-16T20:02:44.915465300Z</date>
+  <millis>1668628964915</millis>
+  <nanos>465300</nanos>
+  <sequence>31</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Genero Atualizado no Livro com Id: 19</message>
+</record>
+<record>
+  <date>2022-11-16T20:02:44.916462400Z</date>
+  <millis>1668628964916</millis>
+  <nanos>462400</nanos>
+  <sequence>32</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Preco Atualizado no Livro com Id: 19</message>
+</record>
+<record>
+  <date>2022-11-16T20:02:44.920476700Z</date>
+  <millis>1668628964920</millis>
+  <nanos>476700</nanos>
+  <sequence>33</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Isbn Atualizado no Livro com Id: 19</message>
+</record>
+<record>
+  <date>2022-11-16T20:02:44.921449800Z</date>
+  <millis>1668628964921</millis>
+  <nanos>449800</nanos>
+  <sequence>34</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Id do Escritor Atualizado no Livro com Id: 19</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T20:06:43.320033500Z</date>
+  <millis>1668629203320</millis>
+  <nanos>33500</nanos>
+  <sequence>0</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>saveEscritor</method>
+  <thread>27</thread>
+  <message>Escritor Salvo com Sucuesso</message>
+</record>
+<record>
+  <date>2022-11-16T20:06:55.374238600Z</date>
+  <millis>1668629215374</millis>
+  <nanos>238600</nanos>
+  <sequence>2</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>WARNING</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <exception>
+    <message>java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`bookstoredb`.`livros`, CONSTRAINT `fk_livros_Escritor1` FOREIGN KEY (`idEscritor`) REFERENCES `escritor` (`idEscritor`))</message>
+    <frame>
+      <class>com.mysql.cj.jdbc.exceptions.SQLError</class>
+      <method>createSQLException</method>
+      <line>117</line>
+    </frame>
+    <frame>
+      <class>com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping</class>
+      <method>translateException</method>
+      <line>122</line>
+    </frame>
+    <frame>
+      <class>com.mysql.cj.jdbc.ClientPreparedStatement</class>
+      <method>executeInternal</method>
+      <line>916</line>
+    </frame>
+    <frame>
+      <class>com.mysql.cj.jdbc.ClientPreparedStatement</class>
+      <method>execute</method>
+      <line>354</line>
+    </frame>
+    <frame>
+      <class>trab02.PersistDAO</class>
+      <method>updateLivro</method>
+      <line>280</line>
+    </frame>
+    <frame>
+      <class>trab02.BookFrame</class>
+      <method>customButtonActionPerformed</method>
+      <line>533</line>
+    </frame>
+    <frame>
+      <class>trab02.BookFrame$15</class>
+      <method>actionPerformed</method>
+      <line>337</line>
+    </frame>
+    <frame>
+      <class>javax.swing.AbstractButton</class>
+      <method>fireActionPerformed</method>
+      <line>1972</line>
+    </frame>
+    <frame>
+      <class>javax.swing.AbstractButton$Handler</class>
+      <method>actionPerformed</method>
+      <line>2313</line>
+    </frame>
+    <frame>
+      <class>javax.swing.DefaultButtonModel</class>
+      <method>fireActionPerformed</method>
+      <line>405</line>
+    </frame>
+    <frame>
+      <class>javax.swing.DefaultButtonModel</class>
+      <method>setPressed</method>
+      <line>262</line>
+    </frame>
+    <frame>
+      <class>javax.swing.plaf.basic.BasicButtonListener</class>
+      <method>mouseReleased</method>
+      <line>279</line>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>processMouseEvent</method>
+      <line>6620</line>
+    </frame>
+    <frame>
+      <class>javax.swing.JComponent</class>
+      <method>processMouseEvent</method>
+      <line>3398</line>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>processEvent</method>
+      <line>6385</line>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>processEvent</method>
+      <line>2266</line>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEventImpl</method>
+      <line>4995</line>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>dispatchEventImpl</method>
+      <line>2324</line>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEvent</method>
+      <line>4827</line>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>retargetMouseEvent</method>
+      <line>4948</line>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>processMouseEvent</method>
+      <line>4575</line>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>dispatchEvent</method>
+      <line>4516</line>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>dispatchEventImpl</method>
+      <line>2310</line>
+    </frame>
+    <frame>
+      <class>java.awt.Window</class>
+      <method>dispatchEventImpl</method>
+      <line>2780</line>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEvent</method>
+      <line>4827</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEventImpl</method>
+      <line>775</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+      <line>720</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+      <line>714</line>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>399</line>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>86</line>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>97</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$5</class>
+      <method>run</method>
+      <line>747</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$5</class>
+      <method>run</method>
+      <line>745</line>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>399</line>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>86</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEvent</method>
+      <line>744</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpOneEventForFilters</method>
+      <line>203</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForFilter</method>
+      <line>124</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForHierarchy</method>
+      <line>113</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+      <line>109</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+      <line>101</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>run</method>
+      <line>90</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2022-11-16T20:07:15.614657100Z</date>
+  <millis>1668629235614</millis>
+  <nanos>657100</nanos>
+  <sequence>4</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Titulo Atualizado no Livro com Id: 19</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:15.615653600Z</date>
+  <millis>1668629235615</millis>
+  <nanos>653600</nanos>
+  <sequence>5</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Genero Atualizado no Livro com Id: 19</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:15.616650800Z</date>
+  <millis>1668629235616</millis>
+  <nanos>650800</nanos>
+  <sequence>6</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Preco Atualizado no Livro com Id: 19</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:15.617648200Z</date>
+  <millis>1668629235617</millis>
+  <nanos>648200</nanos>
+  <sequence>7</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Isbn Atualizado no Livro com Id: 19</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:15.620665100Z</date>
+  <millis>1668629235620</millis>
+  <nanos>665100</nanos>
+  <sequence>8</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateLivro</method>
+  <thread>27</thread>
+  <message>Id do Escritor Atualizado no Livro com Id: 19</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:27.819611400Z</date>
+  <millis>1668629247819</millis>
+  <nanos>611400</nanos>
+  <sequence>10</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>deleteEscritor</method>
+  <thread>27</thread>
+  <message>Escritor(es) Deletado(s)</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:27.819611400Z</date>
+  <millis>1668629247819</millis>
+  <nanos>611400</nanos>
+  <sequence>11</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>deleteEscritor</method>
+  <thread>27</thread>
+  <message>Quantidade de linhas modificadas: 1</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:33.505252100Z</date>
+  <millis>1668629253505</millis>
+  <nanos>252100</nanos>
+  <sequence>13</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>deleteEscritor</method>
+  <thread>27</thread>
+  <message>Escritor(es) Deletado(s)</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:33.506249400Z</date>
+  <millis>1668629253506</millis>
+  <nanos>249400</nanos>
+  <sequence>14</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>deleteEscritor</method>
+  <thread>27</thread>
+  <message>Quantidade de linhas modificadas: 1</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:38.205239300Z</date>
+  <millis>1668629258205</millis>
+  <nanos>239300</nanos>
+  <sequence>16</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>deleteEscritor</method>
+  <thread>27</thread>
+  <message>Escritor(es) Deletado(s)</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:38.205889Z</date>
+  <millis>1668629258205</millis>
+  <nanos>889000</nanos>
+  <sequence>17</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>deleteEscritor</method>
+  <thread>27</thread>
+  <message>Quantidade de linhas modificadas: 1</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:43.874637700Z</date>
+  <millis>1668629263874</millis>
+  <nanos>637700</nanos>
+  <sequence>19</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>deleteEscritor</method>
+  <thread>27</thread>
+  <message>Escritor(es) Deletado(s)</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:43.875662100Z</date>
+  <millis>1668629263875</millis>
+  <nanos>662100</nanos>
+  <sequence>20</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>deleteEscritor</method>
+  <thread>27</thread>
+  <message>Quantidade de linhas modificadas: 1</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:48.778046Z</date>
+  <millis>1668629268778</millis>
+  <nanos>46000</nanos>
+  <sequence>22</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>listarEscritores</method>
+  <thread>27</thread>
+  <message>Escritores Mostrados</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:48.778046Z</date>
+  <millis>1668629268778</millis>
+  <nanos>46000</nanos>
+  <sequence>23</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>listarEscritores</method>
+  <thread>27</thread>
+  <message>Quantidade de Escritores: 3</message>
+</record>
+<record>
+  <date>2022-11-16T20:08:08.449915200Z</date>
+  <millis>1668629288449</millis>
+  <nanos>915200</nanos>
+  <sequence>26</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>listarLivros</method>
+  <thread>27</thread>
+  <message>Livros Mostrados</message>
+</record>
+<record>
+  <date>2022-11-16T20:08:08.450912100Z</date>
+  <millis>1668629288450</millis>
+  <nanos>912100</nanos>
+  <sequence>27</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>listarLivros</method>
+  <thread>27</thread>
+  <message>Quantidade de Livros: 4</message>
+</record>
+<record>
+  <date>2022-11-16T20:08:22.256647500Z</date>
+  <millis>1668629302256</millis>
+  <nanos>647500</nanos>
+  <sequence>29</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>listarEscritores</method>
+  <thread>27</thread>
+  <message>Escritores Mostrados</message>
+</record>
+<record>
+  <date>2022-11-16T20:08:22.257669200Z</date>
+  <millis>1668629302257</millis>
+  <nanos>669200</nanos>
+  <sequence>30</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>listarEscritores</method>
+  <thread>27</thread>
+  <message>Quantidade de Escritores: 3</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T20:22:56.805988300Z</date>
+  <millis>1668630176805</millis>
+  <nanos>988300</nanos>
+  <sequence>0</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>listarEscritores</method>
+  <thread>27</thread>
+  <message>Escritores Mostrados</message>
+</record>
+<record>
+  <date>2022-11-16T20:22:56.816714800Z</date>
+  <millis>1668630176816</millis>
+  <nanos>714800</nanos>
+  <sequence>1</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>listarEscritores</method>
+  <thread>27</thread>
+  <message>Quantidade de Escritores: 5</message>
+</record>
+<record>
+  <date>2022-11-16T20:22:59.545198300Z</date>
+  <millis>1668630179545</millis>
+  <nanos>198300</nanos>
+  <sequence>3</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>listarLivros</method>
+  <thread>27</thread>
+  <message>Livros Mostrados</message>
+</record>
+<record>
+  <date>2022-11-16T20:22:59.546196400Z</date>
+  <millis>1668630179546</millis>
+  <nanos>196400</nanos>
+  <sequence>4</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>listarLivros</method>
+  <thread>27</thread>
+  <message>Quantidade de Livros: 6</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T20:24:19.544617200Z</date>
+  <millis>1668630259544</millis>
+  <nanos>617200</nanos>
+  <sequence>0</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateEscritor</method>
+  <thread>27</thread>
+  <message>Primeiro Nome Atualizado no Escritor com Id: 5</message>
+</record>
+<record>
+  <date>2022-11-16T20:24:19.558059Z</date>
+  <millis>1668630259558</millis>
+  <nanos>59000</nanos>
+  <sequence>1</sequence>
+  <logger>trab02.PersistDAO</logger>
+  <level>INFO</level>
+  <class>trab02.PersistDAO</class>
+  <method>updateEscritor</method>
+  <thread>27</thread>
+  <message>Sobrenome Atualizado no Escritor com Id: 5</message>
+</record>
+</log>

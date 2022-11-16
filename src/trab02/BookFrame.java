@@ -11,17 +11,18 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.sql.ResultSet;
-import javax.swing.table.TableColumnModel;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.xpath.XPathExpressionException;
 import org.xml.sax.SAXException;
 import trab02.doc.DocumentReader;
 import trab02.doc.DocumentWriter;
 import java.util.logging.Logger;
+import java.util.logging.FileHandler;
 
 public class BookFrame extends javax.swing.JFrame {
 
-    static final Logger logger = Logger.getLogger(BookFrame.class.getName());
+    static Logger logger = Logger.getLogger(BookFrame.class.getName());
+    static FileHandler fh;
 
     public void addBookRows(Connection con) throws SQLException {
         DefaultTableModel dtm = (DefaultTableModel) bookTable.getModel();
@@ -76,8 +77,9 @@ public class BookFrame extends javax.swing.JFrame {
 
     }
 
-    public BookFrame() throws SQLException {
+    public BookFrame() throws SQLException, IOException {
         initComponents();
+
         Connection con = new ConnectionFactory().establishConnection();
         addBookRows(con);
         addEscritorRows(con);
@@ -198,6 +200,7 @@ public class BookFrame extends javax.swing.JFrame {
             }
         });
 
+        xmlButtonLoadWriter.setForeground(new java.awt.Color(0, 204, 51));
         xmlButtonLoadWriter.setText("Carregar Xml");
         xmlButtonLoadWriter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -205,6 +208,7 @@ public class BookFrame extends javax.swing.JFrame {
             }
         });
 
+        xmlButtonExportWriter.setForeground(new java.awt.Color(255, 51, 51));
         xmlButtonExportWriter.setText("Exportar Xml");
         xmlButtonExportWriter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -217,48 +221,48 @@ public class BookFrame extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButtonUpdateEscritor)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButtonInserirEscritor)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButtonDeleteEscritor))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(xmlButtonLoadWriter)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addComponent(jLabel22)
+                                    .addGap(46, 46, 46)
+                                    .addComponent(jLabel19)
+                                    .addGap(91, 91, 91)
+                                    .addComponent(jLabel20)
+                                    .addGap(0, 109, Short.MAX_VALUE))
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addComponent(jTextFieldIdEscritor, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jTextFieldNomeAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jTextFieldSobrenomeAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel22)
-                                .addGap(46, 46, 46)
-                                .addComponent(jLabel19)))
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(18, 154, Short.MAX_VALUE)
-                                .addComponent(xmlButtonExportWriter))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(82, 82, 82)
-                                .addComponent(jLabel20)
-                                .addGap(0, 0, Short.MAX_VALUE))))
+                                .addComponent(jButtonUpdateEscritor)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButtonInserirEscritor)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButtonDeleteEscritor))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jTextFieldIdEscritor, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextFieldNomeAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTextFieldSobrenomeAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(209, 209, 209)
+                        .addComponent(xmlButtonLoadWriter)))
                 .addContainerGap(112, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(xmlButtonExportWriter)
+                .addGap(17, 17, 17))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(xmlButtonLoadWriter)
-                    .addComponent(xmlButtonExportWriter))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(xmlButtonLoadWriter)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel20)
                     .addComponent(jLabel19)
@@ -273,7 +277,9 @@ public class BookFrame extends javax.swing.JFrame {
                     .addComponent(jButtonInserirEscritor)
                     .addComponent(jButtonDeleteEscritor)
                     .addComponent(jButtonUpdateEscritor))
-                .addGap(35, 35, 35))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(xmlButtonExportWriter, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20))
         );
 
         jTabbedPane2.addTab("Escritores", jPanel2);
@@ -381,6 +387,7 @@ public class BookFrame extends javax.swing.JFrame {
             }
         });
 
+        xmlButtonBookLoad.setForeground(new java.awt.Color(0, 153, 51));
         xmlButtonBookLoad.setText("Carregar Xml");
         xmlButtonBookLoad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -388,6 +395,7 @@ public class BookFrame extends javax.swing.JFrame {
             }
         });
 
+        xmlButtonExportBook.setForeground(new java.awt.Color(255, 0, 0));
         xmlButtonExportBook.setText("Exportar Xml");
         xmlButtonExportBook.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -400,66 +408,63 @@ public class BookFrame extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(100, 100, 100)
+                .addGap(87, 87, 87)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel8))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addGap(117, 117, 117)
+                                .addComponent(xmlButtonBookLoad))
+                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTextFieldTituloBook, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(xmlButtonBookLoad))
+                                    .addComponent(jTextFieldIsbnBook, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel9)
-                                            .addComponent(jTextFieldPrecoBook, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 145, Short.MAX_VALUE)
-                                        .addComponent(xmlButtonExportBook)))))
-                        .addGap(90, 90, 90))
+                                    .addComponent(jLabel9)
+                                    .addComponent(jTextFieldPrecoBook, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldGeneroBook, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(81, 250, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextFieldIdBook, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(customButton)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButtonInsertBook)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButtonDeleteBook))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(79, 79, 79)
+                                        .addComponent(jLabel7)
+                                        .addGap(54, 54, 54)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jTextFieldIdEscritorBook, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel10))
+                                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jButtonInsertBook)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jButtonDeleteBook)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(xmlButtonExportBook, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(15, 15, 15))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jTextFieldIsbnBook, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(31, 31, 31)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextFieldGeneroBook, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel7))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextFieldIdEscritorBook, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel10))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                    .addComponent(jTextFieldIdBook, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3))
+                                .addGap(0, 0, Short.MAX_VALUE))))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 432, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54))
+                .addContainerGap(35, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 487, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(xmlButtonBookLoad)
-                    .addComponent(xmlButtonExportBook))
+                .addComponent(xmlButtonBookLoad)
                 .addGap(13, 13, 13)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -477,16 +482,22 @@ public class BookFrame extends javax.swing.JFrame {
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7)
                     .addComponent(jLabel10))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextFieldIsbnBook, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextFieldGeneroBook, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextFieldIdEscritorBook, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(customButton)
-                    .addComponent(jButtonInsertBook)
-                    .addComponent(jButtonDeleteBook)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(customButton)
+                            .addComponent(jButtonInsertBook)
+                            .addComponent(jButtonDeleteBook)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                        .addComponent(xmlButtonExportBook, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
 
         jTabbedPane2.addTab("Livros", jPanel1);
@@ -505,7 +516,7 @@ public class BookFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -530,7 +541,7 @@ public class BookFrame extends javax.swing.JFrame {
             DefaultTableModel dtm = (DefaultTableModel) bookTable.getModel();
             dtm.setRowCount(0);
             this.addBookRows(con);
-
+            logger.info("Livro Atualizado");
         } catch (SQLException ex) {
             logger.log(Level.SEVERE, null, ex);
         }
@@ -573,6 +584,7 @@ public class BookFrame extends javax.swing.JFrame {
             DefaultTableModel dtm = (DefaultTableModel) bookTable.getModel();
             dtm.setRowCount(0);
             this.addBookRows(con);
+            logger.info("Livro Adicionado");
 
         } catch (SQLException ex) {
             logger.log(Level.SEVERE, null, ex);
@@ -597,7 +609,7 @@ public class BookFrame extends javax.swing.JFrame {
             DefaultTableModel dtm = (DefaultTableModel) bookTable.getModel();
             dtm.setRowCount(0);
             this.addBookRows(con);
-
+            logger.info("Livro Deletado");
         } catch (SQLException ex) {
             logger.log(Level.SEVERE, null, ex);
         }
@@ -633,11 +645,13 @@ public class BookFrame extends javax.swing.JFrame {
             DefaultTableModel dtm = (DefaultTableModel) escritorTable.getModel();
             dtm.setRowCount(0);
             this.addEscritorRows(con);
-
+            logger.info("Escritor Deletado");
         } catch (SQLException ex) {
             logger.log(Level.SEVERE, null, ex);
         }
-
+        jTextFieldIdEscritor.setText("");
+        jTextFieldNomeAuthor.setText("");
+        jTextFieldSobrenomeAuthor.setText("");
     }//GEN-LAST:event_jButtonDeleteEscritorActionPerformed
 
     private void jButtonInserirEscritorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonInserirEscritorActionPerformed
@@ -653,10 +667,15 @@ public class BookFrame extends javax.swing.JFrame {
             DefaultTableModel dtm = (DefaultTableModel) escritorTable.getModel();
             dtm.setRowCount(0);
             this.addEscritorRows(con);
-
+            logger.info("Escritor Adicionado");
         } catch (SQLException ex) {
+
             logger.log(Level.SEVERE, null, ex);
         }
+
+        jTextFieldIdEscritor.setText("");
+        jTextFieldNomeAuthor.setText("");
+        jTextFieldSobrenomeAuthor.setText("");
 
     }//GEN-LAST:event_jButtonInserirEscritorActionPerformed
 
@@ -673,10 +692,14 @@ public class BookFrame extends javax.swing.JFrame {
             DefaultTableModel dtm = (DefaultTableModel) escritorTable.getModel();
             dtm.setRowCount(0);
             this.addEscritorRows(con);
-
+            logger.info("Escritor Atualizado");
         } catch (SQLException ex) {
             logger.log(Level.SEVERE, null, ex);
         }
+
+        jTextFieldIdEscritor.setText("");
+        jTextFieldNomeAuthor.setText("");
+        jTextFieldSobrenomeAuthor.setText("");
 
 
     }//GEN-LAST:event_jButtonUpdateEscritorActionPerformed
@@ -705,13 +728,12 @@ public class BookFrame extends javax.swing.JFrame {
             DefaultTableModel dtm = (DefaultTableModel) bookTable.getModel();
             dtm.setRowCount(0);
             this.addBookRows(con);
-
+            logger.info("Xml de Livro Carregado");
         } catch (XPathExpressionException | SAXException | ParserConfigurationException | IOException ex) {
-            logger.log(Level.SEVERE, null, ex);
+            logger.log(Level.WARNING, null, ex);
         } catch (SQLException ex) {
-
-            logger.log(Level.WARNING, "Escritores nao cadastrados");
-            new Message("Escritores nao cadastrados");
+            // new Message("Escritores nao cadastrados");
+            logger.log(Level.WARNING, "Escritor nao cadastrado");
 
         }
 
@@ -734,12 +756,12 @@ public class BookFrame extends javax.swing.JFrame {
             DefaultTableModel dtm = (DefaultTableModel) escritorTable.getModel();
             dtm.setRowCount(0);
             this.addEscritorRows(con);
-
+            logger.info("Xml de Escritores Carregado com Sucesso");
         } catch (XPathExpressionException | SAXException | ParserConfigurationException | IOException ex) {
             Logger.getLogger(BookFrame.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            logger.log(Level.WARNING, "Escritores ja cadastrados");
-            new Message("Escritores ja cadastrados");
+            logger.log(Level.WARNING, "Escritor(es) ja cadastrado(s)");
+            // new Message("Escritores ja cadastrados");
 
         }
 
@@ -752,7 +774,7 @@ public class BookFrame extends javax.swing.JFrame {
             Connection con = new ConnectionFactory().establishConnection();
             DocumentWriter dw = new DocumentWriter(con);
             dw.writeEscritores();
-
+            logger.info("Xml de Escritores Exportado com Sucesso");
         } catch (SQLException ex) {
             logger.log(Level.SEVERE, null, ex);
         }
@@ -766,7 +788,7 @@ public class BookFrame extends javax.swing.JFrame {
             Connection con = new ConnectionFactory().establishConnection();
             DocumentWriter dw = new DocumentWriter(con);
             dw.writeLivros();
-
+            logger.info("Xml de Livro Exportado");
         } catch (SQLException ex) {
             logger.log(Level.SEVERE, null, ex);
         }
@@ -815,8 +837,10 @@ public class BookFrame extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
+                    fh = new FileHandler("BookFrame.log", true);
+                    logger.addHandler(fh);
                     new BookFrame().setVisible(true);
-                } catch (SQLException ex) {
+                } catch (SQLException | IOException ex) {
                     logger.log(Level.SEVERE, null, ex);
                 }
             }

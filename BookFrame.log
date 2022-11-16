@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T18:28:34.696889300Z</date>
+  <millis>1668623314696</millis>
+  <nanos>889300</nanos>
+  <sequence>0</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonInserirEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Adicionado</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T19:03:29.906280700Z</date>
+  <millis>1668625409906</millis>
+  <nanos>280700</nanos>
+  <sequence>1</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonInserirEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Adicionado</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T19:07:04.362522400Z</date>
+  <millis>1668625624362</millis>
+  <nanos>522400</nanos>
+  <sequence>1</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonInserirEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Adicionado</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T19:28:29.240480600Z</date>
+  <millis>1668626909240</millis>
+  <nanos>480600</nanos>
+  <sequence>2</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonDeleteEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Deletado</message>
+</record>
+<record>
+  <date>2022-11-16T19:28:34.665969800Z</date>
+  <millis>1668626914665</millis>
+  <nanos>969800</nanos>
+  <sequence>5</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonDeleteEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Deletado</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T19:52:58.693204300Z</date>
+  <millis>1668628378693</millis>
+  <nanos>204300</nanos>
+  <sequence>2</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonUpdateEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Atualizado</message>
+</record>
+<record>
+  <date>2022-11-16T19:55:34.231264Z</date>
+  <millis>1668628534231</millis>
+  <nanos>264000</nanos>
+  <sequence>4</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>customButtonActionPerformed</method>
+  <thread>27</thread>
+  <message>Livro Atualizado</message>
+</record>
+<record>
+  <date>2022-11-16T19:55:54.808804400Z</date>
+  <millis>1668628554808</millis>
+  <nanos>804400</nanos>
+  <sequence>6</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>customButtonActionPerformed</method>
+  <thread>27</thread>
+  <message>Livro Atualizado</message>
+</record>
+<record>
+  <date>2022-11-16T19:56:13.363287400Z</date>
+  <millis>1668628573363</millis>
+  <nanos>287400</nanos>
+  <sequence>9</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonUpdateEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Atualizado</message>
+</record>
+<record>
+  <date>2022-11-16T19:56:38.417664200Z</date>
+  <millis>1668628598417</millis>
+  <nanos>664200</nanos>
+  <sequence>11</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonInserirEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Adicionado</message>
+</record>
+<record>
+  <date>2022-11-16T19:56:54.860898300Z</date>
+  <millis>1668628614860</millis>
+  <nanos>898300</nanos>
+  <sequence>12</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>customButtonActionPerformed</method>
+  <thread>27</thread>
+  <message>Livro Atualizado</message>
+</record>
+<record>
+  <date>2022-11-16T19:57:46.441973900Z</date>
+  <millis>1668628666441</millis>
+  <nanos>973900</nanos>
+  <sequence>15</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>customButtonActionPerformed</method>
+  <thread>27</thread>
+  <message>Livro Atualizado</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T20:00:17.434046800Z</date>
+  <millis>1668628817434</millis>
+  <nanos>46800</nanos>
+  <sequence>5</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>customButtonActionPerformed</method>
+  <thread>27</thread>
+  <message>Livro Atualizado</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:25.303402700Z</date>
+  <millis>1668628825303</millis>
+  <nanos>402700</nanos>
+  <sequence>11</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>customButtonActionPerformed</method>
+  <thread>27</thread>
+  <message>Livro Atualizado</message>
+</record>
+<record>
+  <date>2022-11-16T20:00:29.772861600Z</date>
+  <millis>1668628829772</millis>
+  <nanos>861600</nanos>
+  <sequence>17</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>customButtonActionPerformed</method>
+  <thread>27</thread>
+  <message>Livro Atualizado</message>
+</record>
+<record>
+  <date>2022-11-16T20:01:22.935754200Z</date>
+  <millis>1668628882935</millis>
+  <nanos>754200</nanos>
+  <sequence>23</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>customButtonActionPerformed</method>
+  <thread>27</thread>
+  <message>Livro Atualizado</message>
+</record>
+<record>
+  <date>2022-11-16T20:02:31.663587300Z</date>
+  <millis>1668628951663</millis>
+  <nanos>587300</nanos>
+  <sequence>29</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>customButtonActionPerformed</method>
+  <thread>27</thread>
+  <message>Livro Atualizado</message>
+</record>
+<record>
+  <date>2022-11-16T20:02:44.922446400Z</date>
+  <millis>1668628964922</millis>
+  <nanos>446400</nanos>
+  <sequence>35</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>customButtonActionPerformed</method>
+  <thread>27</thread>
+  <message>Livro Atualizado</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T20:06:43.332922Z</date>
+  <millis>1668629203332</millis>
+  <nanos>922000</nanos>
+  <sequence>1</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonInserirEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Adicionado</message>
+</record>
+<record>
+  <date>2022-11-16T20:06:55.377231100Z</date>
+  <millis>1668629215377</millis>
+  <nanos>231100</nanos>
+  <sequence>3</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>customButtonActionPerformed</method>
+  <thread>27</thread>
+  <message>Livro Atualizado</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:15.621638Z</date>
+  <millis>1668629235621</millis>
+  <nanos>638000</nanos>
+  <sequence>9</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>customButtonActionPerformed</method>
+  <thread>27</thread>
+  <message>Livro Atualizado</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:27.821605600Z</date>
+  <millis>1668629247821</millis>
+  <nanos>605600</nanos>
+  <sequence>12</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonDeleteEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Deletado</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:33.507246800Z</date>
+  <millis>1668629253507</millis>
+  <nanos>246800</nanos>
+  <sequence>15</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonDeleteEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Deletado</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:38.206888200Z</date>
+  <millis>1668629258206</millis>
+  <nanos>888200</nanos>
+  <sequence>18</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonDeleteEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Deletado</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:43.877655500Z</date>
+  <millis>1668629263877</millis>
+  <nanos>655500</nanos>
+  <sequence>21</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonDeleteEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Deletado</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:48.858463400Z</date>
+  <millis>1668629268858</millis>
+  <nanos>463400</nanos>
+  <sequence>24</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>xmlButtonExportWriterActionPerformed</method>
+  <thread>27</thread>
+  <message>Xml de Escritores Exportado com Sucesso</message>
+</record>
+<record>
+  <date>2022-11-16T20:07:51.145370700Z</date>
+  <millis>1668629271145</millis>
+  <nanos>370700</nanos>
+  <sequence>25</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>WARNING</level>
+  <class>trab02.BookFrame</class>
+  <method>xmlButtonLoadWriterActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor(es) ja cadastrado(s)</message>
+</record>
+<record>
+  <date>2022-11-16T20:08:08.453904300Z</date>
+  <millis>1668629288453</millis>
+  <nanos>904300</nanos>
+  <sequence>28</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>xmlButtonExportBookActionPerformed</method>
+  <thread>27</thread>
+  <message>Xml de Livro Exportado</message>
+</record>
+<record>
+  <date>2022-11-16T20:08:22.260636200Z</date>
+  <millis>1668629302260</millis>
+  <nanos>636200</nanos>
+  <sequence>31</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>xmlButtonExportWriterActionPerformed</method>
+  <thread>27</thread>
+  <message>Xml de Escritores Exportado com Sucesso</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T20:22:56.854233200Z</date>
+  <millis>1668630176854</millis>
+  <nanos>233200</nanos>
+  <sequence>2</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>xmlButtonExportWriterActionPerformed</method>
+  <thread>27</thread>
+  <message>Xml de Escritores Exportado com Sucesso</message>
+</record>
+<record>
+  <date>2022-11-16T20:22:59.548191200Z</date>
+  <millis>1668630179548</millis>
+  <nanos>191200</nanos>
+  <sequence>5</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>xmlButtonExportBookActionPerformed</method>
+  <thread>27</thread>
+  <message>Xml de Livro Exportado</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-16T20:24:19.559056500Z</date>
+  <millis>1668630259559</millis>
+  <nanos>56500</nanos>
+  <sequence>2</sequence>
+  <logger>trab02.BookFrame</logger>
+  <level>INFO</level>
+  <class>trab02.BookFrame</class>
+  <method>jButtonUpdateEscritorActionPerformed</method>
+  <thread>27</thread>
+  <message>Escritor Atualizado</message>
+</record>
+</log>
