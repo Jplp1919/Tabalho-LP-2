@@ -1,5 +1,6 @@
 package trab02;
 
+import java.util.logging.Level;
 import java.io.IOException;
 import javax.swing.table.DefaultTableModel;
 import java.sql.Connection;
@@ -16,8 +17,11 @@ import javax.xml.xpath.XPathExpressionException;
 import org.xml.sax.SAXException;
 import trab02.doc.DocumentReader;
 import trab02.doc.DocumentWriter;
+import java.util.logging.Logger;
 
 public class BookFrame extends javax.swing.JFrame {
+
+    static final Logger logger = Logger.getLogger(BookFrame.class.getName());
 
     public void addBookRows(Connection con) throws SQLException {
         DefaultTableModel dtm = (DefaultTableModel) bookTable.getModel();
@@ -518,7 +522,6 @@ public class BookFrame extends javax.swing.JFrame {
         String genero = jTextFieldGeneroBook.getText();
         String isbn = jTextFieldIsbnBook.getText();
         String preco = jTextFieldPrecoBook.getText();
-        //Double preco = Double.valueOf(StrPreco);
         String StrIdEscritor = jTextFieldIdEscritorBook.getText();
         try {
             Connection con = new ConnectionFactory().establishConnection();
@@ -529,7 +532,7 @@ public class BookFrame extends javax.swing.JFrame {
             this.addBookRows(con);
 
         } catch (SQLException ex) {
-            Logger.getLogger(BookFrame.class.getName()).log(Level.SEVERE, null, ex);
+            logger.log(Level.SEVERE, null, ex);
         }
 
         jTextFieldIdBook.setText("");
@@ -572,7 +575,7 @@ public class BookFrame extends javax.swing.JFrame {
             this.addBookRows(con);
 
         } catch (SQLException ex) {
-            Logger.getLogger(BookFrame.class.getName()).log(Level.SEVERE, null, ex);
+            logger.log(Level.SEVERE, null, ex);
         }
         jTextFieldIdBook.setText("");
         jTextFieldTituloBook.setText("");
@@ -596,7 +599,7 @@ public class BookFrame extends javax.swing.JFrame {
             this.addBookRows(con);
 
         } catch (SQLException ex) {
-            Logger.getLogger(BookFrame.class.getName()).log(Level.SEVERE, null, ex);
+            logger.log(Level.SEVERE, null, ex);
         }
 
         jTextFieldIdBook.setText("");
@@ -632,7 +635,7 @@ public class BookFrame extends javax.swing.JFrame {
             this.addEscritorRows(con);
 
         } catch (SQLException ex) {
-            Logger.getLogger(BookFrame.class.getName()).log(Level.SEVERE, null, ex);
+            logger.log(Level.SEVERE, null, ex);
         }
 
     }//GEN-LAST:event_jButtonDeleteEscritorActionPerformed
@@ -652,7 +655,7 @@ public class BookFrame extends javax.swing.JFrame {
             this.addEscritorRows(con);
 
         } catch (SQLException ex) {
-            Logger.getLogger(BookFrame.class.getName()).log(Level.SEVERE, null, ex);
+            logger.log(Level.SEVERE, null, ex);
         }
 
     }//GEN-LAST:event_jButtonInserirEscritorActionPerformed
@@ -672,7 +675,7 @@ public class BookFrame extends javax.swing.JFrame {
             this.addEscritorRows(con);
 
         } catch (SQLException ex) {
-            Logger.getLogger(BookFrame.class.getName()).log(Level.SEVERE, null, ex);
+            logger.log(Level.SEVERE, null, ex);
         }
 
 
@@ -704,10 +707,12 @@ public class BookFrame extends javax.swing.JFrame {
             this.addBookRows(con);
 
         } catch (XPathExpressionException | SAXException | ParserConfigurationException | IOException ex) {
-            Logger.getLogger(BookFrame.class.getName()).log(Level.SEVERE, null, ex);
+            logger.log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            
+
+            logger.log(Level.WARNING, "Escritores nao cadastrados");
             new Message("Escritores nao cadastrados");
+
         }
 
     }//GEN-LAST:event_xmlButtonBookLoadActionPerformed
@@ -733,8 +738,9 @@ public class BookFrame extends javax.swing.JFrame {
         } catch (XPathExpressionException | SAXException | ParserConfigurationException | IOException ex) {
             Logger.getLogger(BookFrame.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
+            logger.log(Level.WARNING, "Escritores ja cadastrados");
             new Message("Escritores ja cadastrados");
-            
+
         }
 
 
@@ -748,7 +754,7 @@ public class BookFrame extends javax.swing.JFrame {
             dw.writeEscritores();
 
         } catch (SQLException ex) {
-            Logger.getLogger(BookFrame.class.getName()).log(Level.SEVERE, null, ex);
+            logger.log(Level.SEVERE, null, ex);
         }
 
 
@@ -762,7 +768,7 @@ public class BookFrame extends javax.swing.JFrame {
             dw.writeLivros();
 
         } catch (SQLException ex) {
-            Logger.getLogger(BookFrame.class.getName()).log(Level.SEVERE, null, ex);
+            logger.log(Level.SEVERE, null, ex);
         }
 
     }//GEN-LAST:event_xmlButtonExportBookActionPerformed
@@ -811,7 +817,7 @@ public class BookFrame extends javax.swing.JFrame {
                 try {
                     new BookFrame().setVisible(true);
                 } catch (SQLException ex) {
-                    Logger.getLogger(BookFrame.class.getName()).log(Level.SEVERE, null, ex);
+                    logger.log(Level.SEVERE, null, ex);
                 }
             }
         });
