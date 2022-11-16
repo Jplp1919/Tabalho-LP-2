@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Livros>
     <Livro>
-        <Id>7</Id>
+        <Id>8</Id>
         <Titulo>It</Titulo>
         <Genero>Terror</Genero>
         <Isbn>teste</Isbn>
@@ -9,7 +9,7 @@
         <IdEscritor>1</IdEscritor>
     </Livro>
     <Livro>
-        <Id>8</Id>
+        <Id>9</Id>
         <Titulo>carrie</Titulo>
         <Genero>Terror</Genero>
         <Isbn>teste</Isbn>
@@ -17,11 +17,19 @@
         <IdEscritor>1</IdEscritor>
     </Livro>
     <Livro>
-        <Id>9</Id>
+        <Id>10</Id>
         <Titulo>cujo</Titulo>
         <Genero>Terror</Genero>
         <Isbn>teste</Isbn>
         <Preco>25.0</Preco>
         <IdEscritor>1</IdEscritor>
+    </Livro>
+    <Livro>
+        <Id>11</Id>
+        <Titulo>Sherlock Holmes</Titulo>
+        <Genero>Misterio</Genero>
+        <Isbn>teste</Isbn>
+        <Preco>15.0</Preco>
+        <IdEscritor>3</IdEscritor>
     </Livro>
 </Livros>
